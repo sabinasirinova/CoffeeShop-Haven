@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  background: linear-gradient(to bottom right, #ffe7ca, white);
+  color: #3e3e3e;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(90deg, #5a3d3b, #7b5243);
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+}
+
+header nav ul li a {
+  font-weight: 500;
+  font-size: 17px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background 0.4s, color 0.4s, transform 0.4s;
+  font-style: italic;
+}
+
+header nav ul li a:hover {
+  background: #f0a500;
+  color: #3e3e3e;
+  transform: translateY(-2px);
+}
+
+header nav ul li a,
+.hero-content .btn,
+#contact p a {
+  text-decoration: none;
+}
+
+.hero-section {
+  background-image: url('https://wallpaperaccess.com/full/1158041.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeIn 2s ease-in-out;
+  font-style: italic;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.hero-content h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  animation: slideInLeft 1.5s ease-out;
+  font-style: italic;
+}
+
+.hero-content p {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  animation: slideInRight 1.5s ease-out;
+  font-style: italic;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.hero-content .btn {
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s, background-color 0.4s;
+  font-style: italic;
+}
+
+.hero-content .btn:hover {
+  background: #f0a500;
+  color: #3e3e3e;
+  transform: scale(1.05);
+}
+
+#about {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in;
+  font-style: italic;
+}
+
+#about h2 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #5a3d3b;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+#about p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #4e4a4a;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+#gallery {
+  padding: 50px 20px;
+  background: #fdf4e3;
+  text-align: center;
+  font-style: italic;
+}
+
+#gallery h2 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #5a3d3b;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.gallery img:hover {
+  transform: scale(1.06);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+  padding: 50px 20px;
+  background: #fff;
+  text-align: center;
+  font-style: italic;
+}
+
+#contact h2 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #5a3d3b;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+#contact p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #666;
+  font-style: italic;
+}
+
+footer {
+  background: #5a3d3b;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+}
+
+footer p {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #eee;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
