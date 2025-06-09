@@ -97,7 +97,6 @@ header nav ul li a,
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -107,7 +106,6 @@ header nav ul li a,
   from {
     transform: translateX(-100%);
   }
-
   to {
     transform: translateX(0);
   }
@@ -117,7 +115,6 @@ header nav ul li a,
   from {
     transform: translateX(100%);
   }
-
   to {
     transform: translateX(0);
   }
